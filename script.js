@@ -3,7 +3,7 @@ $(document).ready( async function (){
     let data=await fetch("./data.json")
     let res=await data.json()
     console.log(res.data)
-    res.Countries.map((element)=>{
+    res.data.map((element)=>{
         tbody.innerHTML+=`
         <tr>
         <td>${element.name}</td>
